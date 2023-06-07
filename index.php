@@ -14,10 +14,15 @@ $route->group(null);
 
 $route->get("/", "Web:home");
 $route->get("/sobre", "Web:about");
+$route->get("/portifolio", "Web:portfolio");
+$route->get("/servicos", "Web:services");
+$route->get("/equipe", "Web:team");
 $route->get("/localizacao","Web:location");
 $route->get("/blog","Web:blog");
 $route->get("/contato","Web:contact");
 $route->get("/perfil","Web:profile");
+$route->get("/faq","Web:faq");
+$route->get("/livros","Web:books");
 
 $route->group("/app");
 $route->get("/", "App:home");
